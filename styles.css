@@ -1,0 +1,38 @@
+h2{
+    font-size: 1.17em;
+}
+.paragrafele{
+    padding-top: 2rem;
+}
+h4{
+    font-size: 1em;
+    font-weight: normal;
+}
+p{
+    color:red;
+}
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 2px;
+    background-color:rgb(255, 255, 240);
+    
+}
+tr, th,td {
+    
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 2px;
+    background-color:rgb(255, 255, 240);
+    
+}
+th{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: separate;
+    background-color: rgb(255, 255, 240);
+}
+td, th{
+    width:50%;
+}

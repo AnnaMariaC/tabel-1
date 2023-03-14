@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/img/pictograma.png" type="image/x-icon">
+    <script src="scripts.js"></script>
+    <title>Anaf</title>
+</head>
+<body>
+    <!--Partea de tilturi-->
+    <div class="titluri">
+        <em>
+            <h2>Ministerul Finanțelor</h1>
+            <h2>Agenția Națională de Administre Fiscală</h2>
+        </em>
+    </div>
+    <!--partea de paragrafe-->
+    <div class="paragrafele">
+        <em>
+            <h4>Vizualizare documente</h4>
+            <p>Verificarea recipiselor pe https://www.anaf.ro/StareD112/ se poate face doar pentru ultimele 200 de declaraţii depuse.<br>
+                Vă rugăm ca după fiecare grup de 200 de declaraţii depuse să aşteptaţi prelucrarea acestora şi să descărcaţi recipisele.</p>
+        </em>
+    </div>
+    <!--tabelul-->
+    <table>
+        <caption>Introduceţi indexul/respectiv numărul de inregistrare şi CIF-ul unui document depus în ultimele trei luni.
+             Dacă este corect veţi primi o listă a documentelor depuse în această perioada.</caption>
+             <thead>
+                <tr>
+                     <th colspan="2">Pentru documentele depuse
+                        <input type="radio" name="ghiseu" id="option1" value="Internet" checked="checked" >
+                        <label for="option1"> Internet</label>
+                        <input type="radio" name="ghiseu" id="option2" value="Ghiseu">
+                        <label for="option2"> Ghișeu</label>
+                    </th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td id="introduce">Introduceţi indexul de înregistrare</td>
+                    <td> <input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Introduceţi CIF-ul contribuabilului:</td>
+                    <td> <input type="text"></td>
+                </tr>
+             </tbody>
+             <tfoot>
+                <tr>
+                    <td></td>
+                    <td> <button>Verifică</button></td>
+                </tr>
+             </tfoot>
+    </table>
+    <script>
+        document.getElementById('option1').onclick = function () { 
+            introduce.innerText = "Introduceţi indexul de înregistrare";  
+        } 
+        document.getElementById('option2').onclick = function () { 
+            introduce.innerText = "Introduceţi numărul de înregistrare";
+          } 
+    </script>
+</body>
+</html>
